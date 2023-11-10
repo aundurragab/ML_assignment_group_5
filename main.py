@@ -13,7 +13,7 @@ import os
 import xgboost as xgb
 
  
-#st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 def home():
     st.title("Welcome to Health App Hub! 🏥")
