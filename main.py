@@ -24,25 +24,25 @@ def home():
     # Add buttons for each app with the corresponding display name
     with col1:
         image = Image.open("media/heart.jpg")
-        st.image(image, width=400, use_column_width=True)
+        st.image(image, width=300, use_column_width=True)
         st.markdown("<h3 style='text-align: center; color: #3cb371;'>Heart Attack Prediction</h3>", unsafe_allow_html=True)
         st.write("The **Heart Attack Prediction App** assesses the likelihood of a heart attack based on factors like age, blood pressure, cholesterol levels, and lifestyle choices. Users input their health parameters to **receive a risk estimation**, empowering them to make informed decisions about their cardiovascular health")
 
     with col2:
         image = Image.open("media/neumonia.jpg")
-        st.image(image, width=400, use_column_width=True)
+        st.image(image, width=300, use_column_width=True)
         st.markdown("<h3 style='text-align: center; color: #3cb371;'>Pneumonia Prediction</h3>", unsafe_allow_html=True)
         st.write("The **Pneumonia Prediction App** analyzes chest X-ray images to determine the **likelihood of pneumonia**. By processing these images, the app provides a **quick and accurate assessment**, aiding in timely medical intervention and treatment decisions")
 
     with col3:
         image = Image.open("media/smoking.jpg")
-        st.image(image, width=400, use_column_width=True)
+        st.image(image, width=300, use_column_width=True)
         st.markdown("<h3 style='text-align: center; color: #3cb371;'>Smoking Habits Detection</h3>", unsafe_allow_html=True)
         st.write("The **Smoking Habits Detection App** identifies smoking behaviors and evaluates related health risks. By analyzing user inputs, it **provides insights into the impact of smoking on overall health**, aiding individuals in understanding the risks associated with tobacco use and encouraging smoking cessation for improved well-being")
 
     with col4:
         image = Image.open("media/health.jpg")
-        st.image(image, width=400, use_column_width=True)
+        st.image(image, width=300, use_column_width=True)
         st.markdown("<h3 style='text-align: center; color: #3cb371;'>Healthy Habits Classification</h3>", unsafe_allow_html=True)
         st.write("The **Healthy Habits Classification App** categorizes individuals' health levels by considering physical performance metrics and personal details. It offers **personalized insights, guiding users to make informed decisions about their well-being** and encouraging healthier lifestyle choices")
     st.subheader("Disclaimer:")
@@ -94,10 +94,10 @@ def heart():
 
         if probability_of_heart_attack < 0.5:
         	st.success(f'Great news! Based on the information provided you have a probability of {(probability_of_heart_attack):.2f}% to have a heart attack. Keep maintaining a healthy lifestyle.')
-        	st.image('media/heart-success.webp', width=650)
+        	st.image('media/heart-success.webp', width=400)
         else:
         	st.error(f'Important: The prediction indicates a potential risk of a heart attack with a probability of {(probability_of_heart_attack):.2f}%. It is crucial to consult a healthcare professional.')
-        	st.image('media/heart-attack.jpg', width=650)
+        	st.image('media/heart-attack.jpg', width=400)
 
         return probability_of_heart_attack
 
@@ -106,7 +106,7 @@ def heart():
     # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/heart-logo.jpg', width=400, use_column_width=False)
+        st.image('media/heart-logo.jpg', width=400, use_column_width=True)
 
     description = """
     *Welcome to the Heart Attack Prediction App!*
@@ -158,7 +158,7 @@ def pneumonia():
 # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/lung-logo.jpg', width=400, use_column_width=False)
+        st.image('media/lung-logo.jpg', width=400, use_column_width=True)
 
     with st.expander("ℹ️ - About this app", expanded=True):
         st.write("""
@@ -237,7 +237,7 @@ def smoking03():
     # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/smoking_.jpg', width=400, use_column_width=False)
+        st.image('media/smoking_.jpg', width=400, use_column_width=True)
 
 
 
@@ -364,7 +364,7 @@ def healthy_habits():
     # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/healthy.jpg', width=500, use_column_width=False)
+        st.image('media/healthy.jpg', width=400, use_column_width=True)
 
     st.write("The **Healthy Habits Classification App** is a sophisticated and user-centric platform that employs a comprehensive approach to assessing individuals' health. By meticulously analyzing a wide array of physical performance metrics, such as cardiovascular endurance, muscle strength, flexibility, and more, in conjunction with personal details like age, gender, and medical history, the app delivers a **precise evaluation** of one's health status. This in-depth assessment forms the foundation for the app's intelligent algorithms to generate **highly personalized insights**. These insights go beyond generic health recommendations, tailoring their guidance to each user's unique profile. Whether it's optimizing workout routines, suggesting dietary adjustments, or offering stress management techniques, the app empowers users with a holistic understanding of their well-being, helping them make **informed decisions** to improve their health.")
 
