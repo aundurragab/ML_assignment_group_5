@@ -105,7 +105,7 @@ def heart():
     # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/heart-logo.jpg', width=500, use_column_width=False)
+        st.image('media/heart-logo.jpg', width=400, use_column_width=False)
 
     description = """
     *Welcome to the Heart Attack Prediction App!*
