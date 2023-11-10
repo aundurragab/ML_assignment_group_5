@@ -1,6 +1,3 @@
-from feedback import feedback
-from healthy_habits import healthy_habits
-from smoking import smoking03
 import streamlit as st 
 import numpy as np
 import matplotlib.pyplot as plt
