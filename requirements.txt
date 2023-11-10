@@ -1,10 +1,10 @@
-numpy
-pandas
-scipy
-matplotlib
 streamlit
-ydata_profiling
-streamlit-pandas-profiling
+pickle-mixin
+joblib
 tensorflow
-Pillow>=8.0.0
+keras
 xgboost
+pandas
+numpy
+matplotlib
+pillow
