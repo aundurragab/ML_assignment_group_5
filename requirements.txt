@@ -8,3 +8,4 @@ streamlit-pandas-profiling
 tensorflow
 Pillow>=8.0.0
 xgboost
+pickle
