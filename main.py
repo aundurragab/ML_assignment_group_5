@@ -158,7 +158,7 @@ def pneumonia():
 # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/lung-logo.jpg', width=500, use_column_width=False)
+        st.image('media/lung-logo.jpg', width=400, use_column_width=False)
 
     with st.expander("ℹ️ - About this app", expanded=True):
         st.write("""
@@ -192,10 +192,10 @@ def pneumonia():
 
         if prediction_value < 50:
             st.success(f"Good news! The X-ray image is classified as Normal. The model is {100 - prediction_value:.2f}% confident.")
-            st.image('media/lung-success.jpg', width = 700)
+            st.image('media/lung-success.jpg', width = 400)
         else:
             st.error(f"Bad news. The X-ray image is classified as Pneumonia. The model is {prediction_value:.2f}% confident and we strongly suggest you to consult a healthcare professional.")
-            st.image('media/lung-checkup.jpg', width = 700)
+            st.image('media/lung-checkup.jpg', width = 400)
 
 
 
@@ -237,7 +237,7 @@ def smoking03():
     # Centered image
     col1, col2, col3 = st.columns(3)  # Create three columns for layout
     with col2:  # Use the middle column for the centered image
-        st.image('media/smoking_.jpg', width=500, use_column_width=False)
+        st.image('media/smoking_.jpg', width=400, use_column_width=False)
 
 
 
